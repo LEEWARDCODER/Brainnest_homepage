@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lee' help</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+        }
+
+        header,
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            min-width: 50%;
+        }
+
+
+        @media screen and (max-width: 560px) {
+
+            header,
+            nav {
+                display: block;
+            }
+        }
+
+        header,
+        section:first-of-type,
+        footer {
+            background-color: #1F2937;
+            color: white;
+        }
+
+        header {
+            min-height: 3rem;
+            padding: 0 15%;
+        }
+
+        header nav a {
+
+            outline: none;
+            text-decoration: none;
+            color: #999999;
+            font-weight: lighter;
+        }
+
+        header nav a+a {
+            padding-left: 2rem;
+        }
+
+
+        footer,
+        section {
+            padding: 0 15%;
+        }
+
+        section+section {
+            margin: 0 0 3rem 0;
+        }
+
+        main section:first-of-type {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        @media screen and (max-width: 720px) {
+            main section:first-of-type {
+                display: block;
+            }
+
+            main section:first-of-type {
+                padding-bottom: 2rem;
+            }
+        }
+
+        main section:first-of-type figure {
+            height: 20rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding-right: 2rem;
+        }
+
+        main section:first-of-type figure h1 {
+            font-size: 3rem;
+            font-weight: bolder;
+            color: #F9FAF8;
+        }
+
+        main section:first-of-type figure button {
+            margin-top: 1rem;
+            padding: 0.5rem 2rem;
+            border-radius: 0.5rem;
+            background-color: #3882F6;
+        }
+
+        main section:first-of-type div img {
+            max-width: 100%;
+        }
+
+        main section:nth-of-type(2) h1 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        main section:nth-of-type(2) div {
+            display: flex;
+
+            justify-content: space-between;
+            padding: 0 15%;
+        }
+
+        @media screen and (max-width: 800px) {
+
+            main section:nth-of-type(2) div {
+                flex-wrap: wrap;
+            }
+
+            main section:nth-of-type(2) div figure+figure {
+                margin-top: 1rem;
+            }
+        }
+
+        @media screen and (min-width: 961px) {
+            main section:nth-of-type(2) div figure+figure {
+                margin-left: 3rem;
+            }
+        }
+
+        main section:nth-of-type(2) div figure img {
+            max-width: 100%;
+        }
+
+
+        main section:nth-of-type(2) figcaption {
+            text-align: center;
+            word-break: break-all;
+            /* word-wrap: break-word; */
+        }
+
+        main section:nth-child(3) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        main section:nth-child(3) blockquote {
+            background-color: #E5E7EB;
+
+            padding: 2rem 15%;
+
+            font-size: 2.25rem;
+            font-weight: lighter;
+            font-style: italic;
+            color: #1F2937;
+        }
+
+        main section:nth-child(3) blockquote p {
+            text-align: end;
+        }
+
+        main section:last-of-type div:first-child {
+            display: flex;
+            align-items: center;
+            background-color: #3882F6;
+            border-radius: 10px;
+            margin: 0 15%;
+            padding: 3rem 5rem;
+        }
+
+        main section:last-of-type figure {}
+
+        main section:last-of-type button {
+            padding-left: 2rem;
+            padding: 0.5rem 2rem;
+            border-radius: 0.5rem;
+            background-color: #3882F6;
+        }
+
+        @media screen and (max-width: 768px) {
+            main section:last-of-type div:first-child {
+                display: block;
+            }
+            main section:last-of-type button {
+                margin-top: 1rem;
+            }
+
+        }
+
+        footer {
+            text-align: center;
+            height: 2rem;
+            line-height: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Lee' help</h1>
+        <nav>
+            <a href="#">Wx App</a>
+            <a href="#">Web Design</a>
+            <a href="#">Backend Design</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <figure style="flex:1">
+                <h1>
+                    This website is awesome
+                </h1>
+                <figcaption>
+                    subtext that subtext that subtext that subtext that subtext that subtext that subtext that subtext
+                    that
+                </figcaption>
+                <button>sign up</button>
+            </figure>
+            <div style="flex:1">
+                <img src="./images/hero.jpg" alt="many users sitting beside screen">
+            </div>
+        </section>
+
+        <section>
+            <h1>random random random random</h1>
+            <div>
+                <figure>
+                    <img src="./images/hero.jpg" alt="many users sitting beside screen">
+                    <figcaption>subtext that subtext that subtext that</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/hero.jpg" alt="many users sitting beside screen">
+                    <figcaption>subtext that subtext that subtext that</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/hero.jpg" alt="many users sitting beside screen">
+                    <figcaption>subtext that subtext that subtext that</figcaption>
+                </figure>
+                <figure>
+                    <img src="./images/hero.jpg" alt="many users sitting beside screen">
+                    <figcaption>subtext that subtext that subtext that</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <blockquote cite="somewhere">
+                This is an inspiring quote, or a testimonial from a customer.
+                Maybe it's just filling up space, or
+                may be people will actually read it. Who knows? All I knowis that it looks nice.
+                <p><b>-Thor</b></p>
+            </blockquote>
+
+        </section>
+    
+        <section>
+            <div>
+                <figure style="flex:3">
+                    <h1>text text text text</h1>
+                    <figcaption>subtext subtext subtext subtext subtext subtext subtext subtext subtext subtext subtext
+                        subtext subtext</figcaption>
+                </figure>
+                <div style="flex:1">
+                    <button>
+                        sign up
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>copyright @</p>
+    </footer>
+</body>
+
+</html>
